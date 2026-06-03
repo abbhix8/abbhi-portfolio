@@ -218,9 +218,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  const degreeModal = document.getElementById('degreeModal');
+
   function closeAllModals() {
     projectModal.classList.remove('active');
     resumeModal.classList.remove('active');
+    if (degreeModal) degreeModal.classList.remove('active');
     document.body.classList.remove('no-scroll');
   }
 
@@ -272,6 +275,16 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.classList.add('no-scroll');
     });
   });
+
+  // Open Degree Modal
+  const triggerDegree = document.getElementById('about-badge-degree');
+  if (triggerDegree && degreeModal) {
+    triggerDegree.addEventListener('click', (e) => {
+      e.preventDefault();
+      degreeModal.classList.add('active');
+      document.body.classList.add('no-scroll');
+    });
+  }
 
   // Print Resume
   const printBtn = document.getElementById('printResumeBtn');

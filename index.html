@@ -215,10 +215,10 @@
 
             <!-- Quick badges grid -->
             <div class="about-highlights-grid">
-              <div class="about-highlight-item">
+              <div class="about-highlight-item" id="about-badge-degree" style="cursor: pointer;">
                 <i data-lucide="graduation-cap"></i>
-                <div class="about-highlight-title">Atria CSE</div>
-                <div class="about-highlight-subtitle">VTU Grad</div>
+                <div class="about-highlight-title">View Degree</div>
+                <div class="about-highlight-subtitle">Atria VTU Grad</div>
               </div>
               <div class="about-highlight-item">
                 <i data-lucide="shield-alert"></i>
@@ -839,6 +839,23 @@
             </ul>
           </section>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       12. DEGREE MODAL (ACADEMIC RECORD)
+       ========================================== -->
+  <div class="modal-overlay" id="degreeModal" role="dialog" aria-modal="true" aria-labelledby="modalDegreeTitle">
+    <div class="modal-container" style="max-width: 800px; width: 92%;">
+      <button class="modal-close-btn" id="closeDegreeModalBtn" aria-label="Close modal">&times;</button>
+      
+      <div class="project-live-indicator" style="margin-bottom: 16px;"><span class="pulse-dot"></span> ACADEMIC RECORD</div>
+      <h3 id="modalDegreeTitle" style="font-size: 1.8rem; margin-bottom: 20px;">Bachelor of Engineering Degree</h3>
+      
+      <!-- Embedded PDF Viewer (Toolbar hidden) -->
+      <div style="position: relative; width: 100%; height: 65vh; background-color: #020b18; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+        <iframe src="degree.pdf#toolbar=0&navpanes=0&statusbar=0" width="100%" height="100%" style="border: none;"></iframe>
       </div>
     </div>
   </div>

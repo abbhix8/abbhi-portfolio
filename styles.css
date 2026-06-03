@@ -937,6 +937,13 @@ ul {
   border-radius: 8px;
   padding: 16px;
   text-align: center;
+  transition: all var(--transition-fast);
+}
+
+#about-badge-degree:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold-premium) !important;
+  box-shadow: 0 5px 15px var(--gold-glow);
 }
 
 .about-highlight-item svg {
