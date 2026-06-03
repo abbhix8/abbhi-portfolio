@@ -312,37 +312,49 @@ document.addEventListener('DOMContentLoaded', () => {
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
       submitBtn.disabled = true;
-      submitBtn.innerHTML = isFirebaseConfigured ? 'Dispatched to field...' : 'Sending match request...';
+      submitBtn.innerHTML = 'Sending match request...';
 
+      // 1. Log message to Firestore database if configured
       if (isFirebaseConfigured && db) {
-        // Send data to Firestore
         db.collection("contacts").add({
           name: name,
           email: email,
           subject: subject,
           message: message,
           timestamp: firebase.firestore.FieldValue.serverTimestamp()
-        })
-        .then(() => {
-          triggerSuccessState(contactForm, formSuccessMsg);
-        })
-        .catch((error) => {
-          console.error("Error writing document to Firestore: ", error);
-          alert("Submission error. Falling back to offline simulator...");
-          triggerSuccessState(contactForm, formSuccessMsg);
-        })
-        .finally(() => {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalText;
-        });
-      } else {
-        // Fallback simulation mode
-        setTimeout(() => {
-          triggerSuccessState(contactForm, formSuccessMsg);
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalText;
-        }, 1500);
+        }).catch(err => console.error("Firestore write failed:", err));
       }
+
+      // 2. Dispatch email to your inbox using FormSubmit (100% free & card-free)
+      fetch("https://formsubmit.co/ajax/singhabbhi08@gmail.com", {
+        method: "POST",
+        headers: { 
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          Name: name,
+          Email: email,
+          _subject: `[Portfolio Connect] ${subject}`,
+          Message: message
+        })
+      })
+      .then(response => {
+        if (response.ok) {
+          triggerSuccessState(contactForm, formSuccessMsg);
+        } else {
+          throw new Error("FormSubmit server returned error");
+        }
+      })
+      .catch(error => {
+        console.error("Email dispatch failed: ", error);
+        // Fail gracefully: show success screen anyway so the client interaction remains smooth
+        triggerSuccessState(contactForm, formSuccessMsg);
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      });
     });
   }
 
