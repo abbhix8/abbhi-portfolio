@@ -1561,12 +1561,17 @@ ul {
   background-color: var(--bg-panel);
   border: 1px solid rgba(226, 232, 240, 0.05);
   color: var(--text-silver);
-  width: 44px;
+  padding: 10px 18px;
   height: 44px;
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   align-items: center;
+  gap: 8px;
+  font-family: var(--font-header);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
   transition: all var(--transition-normal);
 }
 
