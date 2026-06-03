@@ -276,15 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Open Degree Modal
-  const triggerDegree = document.getElementById('about-badge-degree');
-  if (triggerDegree && degreeModal) {
-    triggerDegree.addEventListener('click', (e) => {
-      e.preventDefault();
-      degreeModal.classList.add('active');
-      document.body.classList.add('no-scroll');
-    });
-  }
+
 
   // Print Resume
   const printBtn = document.getElementById('printResumeBtn');
