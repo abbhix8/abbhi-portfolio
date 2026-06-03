@@ -22,18 +22,18 @@ document.addEventListener('DOMContentLoaded', () => {
       github: "https://github.com/abbhi-kumar-singh",
       live: "#"
     },
-    explorex: {
-      title: "ExploreX — Travel & Hotel Discovery Platform",
-      tech: "React.js, REST APIs, Netlify, CSS Grid",
-      desc: "ExploreX is a responsive travel e-commerce application designed to facilitate destination discovery, itinerary planning, and hotel reservations.",
+    portfolio: {
+      title: "Responsive Personal Portfolio Website",
+      tech: "HTML5, CSS3, JavaScript, Firebase, FormSubmit, GitHub Pages",
+      desc: "A highly responsive, single-page personal portfolio website built with a premium sports-media aesthetic inspired by FC Barcelona ('Blaugrana') branding.",
       highlights: [
-        "Developed a modern travel platform with dynamic client-side routing, serving over 50+ unique destinations seamlessly.",
-        "Integrated public REST APIs to fetch live weather details, destination maps, and trending itineraries.",
-        "Optimized asset delivery using React lazy loading, code-splitting, and modern image compression, resulting in an audit-tested Lighthouse performance score of 90+.",
-        "Implemented secure form state management to capture search criteria, filter hotels by price/reviews, and mock reservation pipelines."
+        "Engineered a bespoke front-end layout featuring modular CSS grids, custom sports-trading card visual overlays, and interactive SVG football pitch markings.",
+        "Integrated a dual-routing contact form logging submissions directly to Cloud Firestore and dispatching real-time email notifications to singhabbhi08@gmail.com using FormSubmit API.",
+        "Designed responsive media breakpoints to support seamless grid reflow and fluid typography down to 320px mobile screens.",
+        "Optimized navigation experience using IntersectionObserver for active header state tracking, and loaded lightweight vector icon libraries via CDN."
       ],
-      github: "https://github.com/abbhi-kumar-singh",
-      live: "https://netlify.com"
+      github: "https://github.com/abbhix8/abbhi-portfolio",
+      live: "https://abbhix8.github.io/abbhi-portfolio/"
     },
     objectdetection: {
       title: "Real-Time Object & Color Detection System",
