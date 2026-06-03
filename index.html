@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Abbhi Kumar Singh | CS Engineer & AI/ML Android Developer</title>
+  <meta name="description" content="Portfolio of Abbhi Kumar Singh, a Computer Science Graduate, AI/ML Android Developer, and certified AWS Solutions Architect. Explore projects, certifications, and athletic achievements.">
+  <meta name="keywords" content="Abbhi Kumar Singh, Computer Science Engineer, AI/ML Developer, Android Developer, Jetpack Compose, TensorFlow Lite, OpenCV, AWS Certified, Bengaluru">
+  <meta name="author" content="Abbhi Kumar Singh">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Favicon Mock -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23EDBB00%22>⚽</text></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="page-top">
+
+  <!-- ==========================================
+       1. STICKY HEADER / NAVIGATION BAR
+       ========================================== -->
+  <header class="header-nav" id="main-header">
+    <div class="container nav-container">
+      <!-- Left Logo -->
+      <a href="#page-top" class="logo" id="brand-logo">
+        [ ABBHI KUMAR SINGH ]<span>.</span>
+      </a>
+
+      <!-- Center Links -->
+      <nav class="nav-links" id="desktop-navigation">
+        <a href="#about" class="nav-link active" id="nav-link-about">About</a>
+        <a href="#experience" class="nav-link" id="nav-link-experience">Experience</a>
+        <a href="#projects" class="nav-link" id="nav-link-projects">Projects</a>
+        <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
+        <a href="#certifications" class="nav-link" id="nav-link-certs">Certifications</a>
+        <a href="#contact" class="nav-link" id="nav-link-contact">Contact</a>
+      </nav>
+
+      <!-- Right CTA -->
+      <button class="btn-gold trigger-resume" id="header-cta-resume">
+        <i data-lucide="file-text"></i> View Resume
+      </button>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="hamburger" id="nav-hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav" id="mobile-nav-menu">
+    <a href="#about" class="mobile-nav-link" id="mob-link-about">About</a>
+    <a href="#experience" class="mobile-nav-link" id="mob-link-experience">Experience</a>
+    <a href="#projects" class="mobile-nav-link" id="mob-link-projects">Projects</a>
+    <a href="#skills" class="mobile-nav-link" id="mob-link-skills">Skills</a>
+    <a href="#certifications" class="mobile-nav-link" id="mob-link-certs">Certifications</a>
+    <a href="#contact" class="mobile-nav-link" id="mob-link-contact">Contact</a>
+    <div class="mobile-nav-cta">
+      <button class="btn-gold trigger-resume" id="mob-cta-resume">
+        <i data-lucide="file-text"></i> View Resume
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================
+         2. HERO SECTION (THE STADIUM ENTRY)
+         ========================================== -->
+    <section class="hero" id="hero-section">
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge" id="hero-badge-title">
+            <i data-lucide="award"></i> Midfielder of Tech & code
+          </div>
+          <h1 class="hero-title" id="hero-headline">
+            COMPUTER SCIENCE ENGINEER
+            <span class="title-gradient-gold">& AI/ML ANDROID DEVELOPER</span>
+          </h1>
+          <p class="hero-subheading" id="hero-paragraph">
+            Bridging the gap between intelligent machine learning models and scalable mobile applications. Turning complex data pipelines into elegant user experiences.
+          </p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn-gold" id="hero-cta-connect">
+              <i data-lucide="mail"></i> Hire Player
+            </a>
+            <a href="#projects" class="btn-outline-gold" id="hero-cta-work">
+              <i data-lucide="play-circle"></i> Match Highlights
+            </a>
+          </div>
+        </div>
+
+        <!-- Asymmetric Sports Media Card Graphic -->
+        <div class="hero-visual" id="hero-card-container">
+          <div class="sports-card-wrapper">
+            <!-- Decorative Backplane -->
+            <div class="sports-card-bg"></div>
+            
+            <!-- Main Interactive Card -->
+            <div class="sports-card">
+              <!-- Armband ribbon -->
+              <div class="captain-armband-graphic">CAPTAIN</div>
+              
+              <div class="card-header-bar">
+                <span class="card-team-logo"><i data-lucide="zap"></i> PLAYMAKER #8</span>
+                <span class="card-stat-badge">ACTIVE</span>
+              </div>
+              
+              <!-- Tactical Soccer Pitch Graphics -->
+              <div class="pitch-graphic" id="tactical-pitch">
+                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Pitch outline -->
+                  <rect x="5" y="5" width="190" height="110" rx="3" stroke-width="1" />
+                  <!-- Center line -->
+                  <line x1="100" y1="5" x2="100" y2="115" stroke-width="1" />
+                  <!-- Center circle -->
+                  <circle cx="100" cy="60" r="18" stroke-width="1" />
+                  <!-- Left penalty box -->
+                  <rect x="5" y="25" width="30" height="70" stroke-width="1" />
+                  <!-- Right penalty box -->
+                  <rect x="165" y="25" width="30" height="70" stroke-width="1" />
+                </svg>
+                <!-- Player Node -->
+                <div class="player-marker">
+                  <div class="player-marker-dot"></div>
+                  <div class="player-marker-label">A. SINGH (CSE/ML)</div>
+                </div>
+              </div>
+
+              <!-- Player Details -->
+              <div class="card-player-info">
+                <h3 id="card-player-name">Abbhi Kumar Singh</h3>
+                <p id="card-player-role">Android Developer & Data Analyst</p>
+                
+                <div class="card-stats-grid">
+                  <div class="card-stat-item">
+                    <div class="card-stat-val" id="stat-cgpa">8.31</div>
+                    <div class="card-stat-lbl">CGPA (VTU)</div>
+                  </div>
+                  <div class="card-stat-item">
+                    <div class="card-stat-val" id="stat-xp">Agile</div>
+                    <div class="card-stat-lbl">Methodology</div>
+                  </div>
+                  <div class="card-stat-item">
+                    <div class="card-stat-val" id="stat-sport">Captain</div>
+                    <div class="card-stat-lbl">VTU FC</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bold Divider Banner -->
+    <div class="slogan-banner" id="banner-slogan">
+      <h2 class="slogan-text" id="slogan-caption">MÉS QUE UN PORTFOLIO: TACKLING TECHNICAL CHALLENGES</h2>
+    </div>
+
+    <!-- ==========================================
+         3. ABOUT ME SECTION
+         ========================================== -->
+    <section class="about section-padding reveal" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="about-tag">Lineup Sheet</span>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Football Captain / Academic Accomplishments Layout -->
+          <div class="football-leadership-card" id="about-card-badge">
+            <div class="leadership-visual-panel glass-panel">
+              <!-- Armband graphic style -->
+              <div class="leadership-armband">
+                <span class="armband-text">CAPTAIN armband</span>
+                <span class="armband-year">2024-2025</span>
+              </div>
+              
+              <p style="margin-bottom: 24px; font-size: 0.95rem; line-height: 1.6; color: var(--text-silver);">
+                Steering technical squads and athletic teams to victory. Captained VTU Central Division Football Team to runners-up in 2025, and Vice-Captained to champions in 2024.
+              </p>
+
+              <!-- Stats Block -->
+              <div class="leadership-stats">
+                <div class="leadership-stat-card">
+                  <div class="leadership-stat-title">VTU Football Team</div>
+                  <div class="leadership-stat-val">Runners-Up</div>
+                  <div class="leadership-stat-desc">2025 Captain</div>
+                </div>
+                <div class="leadership-stat-card">
+                  <div class="leadership-stat-title">VTU Football Team</div>
+                  <div class="leadership-stat-val">Champions</div>
+                  <div class="leadership-stat-desc">2024 Vice-Captain</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Description Text -->
+          <div class="about-text" id="about-content">
+            <p class="about-intro-highlight" id="about-highlight-phrase">
+              Recent Computer Science & Engineering graduate from Atria Institute of Technology (VTU) with a solid CGPA of 8.31/10.
+            </p>
+            <p class="about-paragraph" id="about-body">
+              Passionate about engineering production-ready mobile apps, implementing on-device machine learning architectures, and studying cybersecurity operations. I leverage team dynamics learned on the pitch to guide architectural design and lead agile development sprints.
+            </p>
+
+            <!-- Quick badges grid -->
+            <div class="about-highlights-grid">
+              <div class="about-highlight-item">
+                <i data-lucide="graduation-cap"></i>
+                <div class="about-highlight-title">Atria CSE</div>
+                <div class="about-highlight-subtitle">VTU Grad</div>
+              </div>
+              <div class="about-highlight-item">
+                <i data-lucide="shield-alert"></i>
+                <div class="about-highlight-title">Cybersecurity</div>
+                <div class="about-highlight-subtitle">Operations enthusiast</div>
+              </div>
+              <div class="about-highlight-item">
+                <i data-lucide="users"></i>
+                <div class="about-highlight-title">Agile Scrum</div>
+                <div class="about-highlight-subtitle">Team Lead Dynamics</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. PROFESSIONAL & SIMULATION EXPERIENCE
+         ========================================== -->
+    <section class="experience section-padding reveal" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="experience-tag">Match History</span>
+          <h2>Professional Experience</h2>
+        </div>
+
+        <div class="timeline" id="experience-timeline">
+          <!-- Item 1: MindMatrix -->
+          <div class="timeline-item">
+            <div class="timeline-badge"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Nov 2025 - Present</span>
+              <h3 class="timeline-role">Android Application Developer</h3>
+              <div class="timeline-company">MindMatrix <span></span></div>
+              <ul class="timeline-bullets">
+                <li>Developing and maintaining scalable, performance-focused Android applications using modern modular clean architectures.</li>
+                <li>Built "Jenu-Gumpu", an offline-first Android marketplace app using Jetpack Compose and Room DB for rural honey collectives. Integrated on-device TensorFlow Lite models for automated honey grading and ML Kit for QR-based traceability.</li>
+                <li>Collaborated in fast-paced Agile sprints covering the full app lifecycle from requirement analysis to QA deployment.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2: Deloitte -->
+          <div class="timeline-item">
+            <div class="timeline-badge"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Job Simulation</span>
+              <h3 class="timeline-role">Data Analyst Simulation</h3>
+              <div class="timeline-company">Deloitte (via Forage) <span></span></div>
+              <ul class="timeline-bullets">
+                <li>Completed an end-to-end analytics simulation covering raw data ingestion, data cleaning, and trend analysis.</li>
+                <li>Built interactive Tableau dashboards to track operational KPIs, perform Root Cause Analysis (RCA), and map process deviations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. KEY PROJECTS (MATCH HIGHLIGHTS CARDS)
+         ========================================== -->
+    <section class="projects section-padding reveal" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="projects-tag">Fixture Highlights</span>
+          <h2>Key Projects</h2>
+        </div>
+
+        <div class="projects-grid" id="projects-cards-container">
+          <!-- Project 1: ZenPose -->
+          <article class="project-card" id="project-card-zenpose">
+            <div class="project-meta">
+              <span class="project-live-indicator"><span class="pulse-dot"></span> LIVE FIT</span>
+              <span class="project-tech-header">Python / CV</span>
+            </div>
+            <h3>ZenPose</h3>
+            <p class="project-desc">
+              AI/ML Yoga Pose Detection & Correction. Engineered a real-time computer vision system using a Random Forest classifier to track yoga sequences with 98% accuracy.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">MediaPipe</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Python</span>
+            </div>
+            <div class="project-link-group">
+              <button class="project-more-btn" data-project="zenpose">
+                Stats & Clips <i data-lucide="chevron-right"></i>
+              </button>
+              <a href="https://github.com/abbhi-kumar-singh" class="project-icon-link" target="_blank" aria-label="GitHub Repository"><i data-lucide="github"></i></a>
+            </div>
+          </article>
+
+          <!-- Project 2: ExploreX -->
+          <article class="project-card" id="project-card-explorex">
+            <div class="project-meta">
+              <span class="project-live-indicator" style="background: rgba(0, 77, 152, 0.15); border-color: var(--accent-blue); color: #76aaff;"><span class="pulse-dot" style="background-color: var(--accent-blue);"></span> LIVE HOSTED</span>
+              <span class="project-tech-header">React Web</span>
+            </div>
+            <h3>ExploreX</h3>
+            <p class="project-desc">
+              Travel & Hotel Discovery Platform featuring dynamic routing for 50+ destinations, deployed on Netlify with lazy loading, achieving a 90+ Lighthouse performance score.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">Netlify</span>
+              <span class="tech-tag">CSS Grid</span>
+            </div>
+            <div class="project-link-group">
+              <button class="project-more-btn" data-project="explorex">
+                Stats & Clips <i data-lucide="chevron-right"></i>
+              </button>
+              <a href="https://github.com/abbhi-kumar-singh" class="project-icon-link" target="_blank" aria-label="GitHub Repository"><i data-lucide="github"></i></a>
+            </div>
+          </article>
+
+          <!-- Project 3: Color Detection -->
+          <article class="project-card" id="project-card-color-detect">
+            <div class="project-meta">
+              <span class="project-live-indicator" style="background: rgba(237, 187, 0, 0.1); border-color: var(--gold-premium); color: var(--gold-premium);"><span class="pulse-dot" style="background-color: var(--gold-premium);"></span> OFFLINE</span>
+              <span class="project-tech-header">OpenCV Pipeline</span>
+            </div>
+            <h3>Object & Color Tracker</h3>
+            <p class="project-desc">
+              Real-Time Object & Color Detection System. Built a computer vision pipeline processing live webcam streams for accurate object and color tracking using HSV masking.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">NumPy</span>
+            </div>
+            <div class="project-link-group">
+              <button class="project-more-btn" data-project="objectdetection">
+                Stats & Clips <i data-lucide="chevron-right"></i>
+              </button>
+              <a href="https://github.com/abbhi-kumar-singh" class="project-icon-link" target="_blank" aria-label="GitHub Repository"><i data-lucide="github"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. TECHNICAL SKILLS (THE TACTICAL GRID)
+         ========================================== -->
+    <section class="skills section-padding reveal" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="skills-tag">Tactical Board</span>
+          <h2>Technical Skills</h2>
+        </div>
+
+        <div class="skills-grid" id="skills-cards-grid">
+          <!-- Skill Card 1: Languages -->
+          <div class="skill-card" id="skill-card-languages">
+            <div class="skill-card-accent"></div>
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper"><i data-lucide="code-2"></i></div>
+              <h3>Languages</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">Python</span><span>90%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="90"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">Java</span><span>85%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">SQL</span><span>80%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">C</span><span>75%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="75"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: AI / ML -->
+          <div class="skill-card" id="skill-card-aiml">
+            <div class="skill-card-accent"></div>
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper"><i data-lucide="brain"></i></div>
+              <h3>AI / Machine Learning</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">Computer Vision (OpenCV)</span><span>88%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="88"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">MediaPipe</span><span>85%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">TensorFlow Lite</span><span>80%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">Supervised Learning (RF)</span><span>85%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="85"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Mobile & Web -->
+          <div class="skill-card" id="skill-card-mobileweb">
+            <div class="skill-card-accent"></div>
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper"><i data-lucide="smartphone"></i></div>
+              <h3>Mobile & Web Dev</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">Android SDK & Jetpack Compose</span><span>90%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="90"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">React.js & Next.js</span><span>80%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">Room DB / REST APIs</span><span>85%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="85"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Data & Cloud -->
+          <div class="skill-card" id="skill-card-datacloud">
+            <div class="skill-card-accent"></div>
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper"><i data-lucide="database"></i></div>
+              <h3>Data & Cloud</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">AWS Services</span><span>82%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="82"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">Tableau & Power BI</span><span>78%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="78"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">Pandas & NumPy</span><span>85%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">MS Excel</span><span>90%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="90"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: Methodologies -->
+          <div class="skill-card" id="skill-card-methodologies">
+            <div class="skill-card-accent"></div>
+            <div class="skill-card-header">
+              <div class="skill-icon-wrapper"><i data-lucide="git-pull-request"></i></div>
+              <h3>Methodologies</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">Agile / Scrum Sprints</span><span>90%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="90"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">Requirement Gathering</span><span>85%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">Technical Documentation</span><span>80%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-info"><span class="skill-name">QA / Deviation Tracking</span><span>85%</span></div>
+                <div class="skill-proficiency-bar"><div class="skill-proficiency-fill" data-percent="85"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. CERTIFICATIONS & ACCOLADES
+         ========================================== -->
+    <section class="certifications section-padding reveal" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="certs-tag">Trophy Room</span>
+          <h2>Certifications & Accolades</h2>
+        </div>
+
+        <div class="certs-grid" id="certifications-badge-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card" id="cert-card-aws">
+            <div class="cert-badge-wrapper"><i data-lucide="shield-check"></i></div>
+            <div class="cert-info">
+              <h3>AWS Solutions Architect</h3>
+              <span class="cert-issuer">Infosys Springboard</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card" id="cert-card-genai">
+            <div class="cert-badge-wrapper"><i data-lucide="cpu"></i></div>
+            <div class="cert-info">
+              <h3>Applied Generative AI</h3>
+              <span class="cert-issuer">Infosys Springboard</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card" id="cert-card-datasci">
+            <div class="cert-badge-wrapper"><i data-lucide="pie-chart"></i></div>
+            <div class="cert-info">
+              <h3>Introduction to Data Science</h3>
+              <span class="cert-issuer">Infosys Springboard</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card" id="cert-card-agile">
+            <div class="cert-badge-wrapper"><i data-lucide="refresh-cw"></i></div>
+            <div class="cert-info">
+              <h3>Agile Scrum in Practice</h3>
+              <span class="cert-issuer">Infosys Springboard</span>
+            </div>
+          </div>
+
+          <!-- Accolade 5 -->
+          <div class="cert-card" id="cert-card-hackathon" style="border-color: var(--gold-premium);">
+            <div class="cert-badge-wrapper" style="border-color: var(--gold-premium); color: var(--gold-premium);"><i data-lucide="trophy"></i></div>
+            <div class="cert-info">
+              <h3>Hackathon Finalist</h3>
+              <span class="cert-issuer" style="color: var(--gold-premium);">Top-7 College Hackathon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         8. CONTACT & FOOTER (THE FINAL WHISTLE)
+         ========================================== -->
+    <section class="contact section-padding reveal" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="contact-tag">Match Setup</span>
+          <h2>Get In Touch</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Details -->
+          <div class="contact-info" id="contact-left-details">
+            <h3 class="contact-slogan">Let's build something intelligent together.</h3>
+            
+            <div class="contact-details">
+              <!-- Location -->
+              <div class="contact-detail-item">
+                <div class="contact-icon-box"><i data-lucide="map-pin"></i></div>
+                <div class="contact-text-box">
+                  <h4>Base Location</h4>
+                  <p>Bengaluru, India</p>
+                </div>
+              </div>
+              <!-- Phone -->
+              <div class="contact-detail-item">
+                <div class="contact-icon-box"><i data-lucide="phone"></i></div>
+                <div class="contact-text-box">
+                  <h4>Hotline</h4>
+                  <p>+91-9632070071</p>
+                </div>
+              </div>
+              <!-- Email -->
+              <div class="contact-detail-item">
+                <div class="contact-icon-box"><i data-lucide="mail"></i></div>
+                <div class="contact-text-box">
+                  <h4>Email Dispatch</h4>
+                  <p>singhabbhi08@gmail.com</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Buttons -->
+            <div class="contact-social-links" id="contact-networks">
+              <a href="https://linkedin.com/in/abbhi-kumar-singh" class="social-link-btn" target="_blank" aria-label="LinkedIn Profile"><i data-lucide="linkedin"></i></a>
+              <a href="https://github.com/abbhi-kumar-singh" class="social-link-btn" target="_blank" aria-label="GitHub Profile"><i data-lucide="github"></i></a>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-panel glass-panel" id="contact-form-wrapper">
+            <form class="contact-form" id="portfolioContactForm">
+              <div class="form-group">
+                <label for="formName" class="form-label">Full Name</label>
+                <input type="text" id="formName" class="form-input" placeholder="e.g. Pep Guardiola" required>
+              </div>
+              <div class="form-group">
+                <label for="formEmail" class="form-label">Email Address</label>
+                <input type="email" id="formEmail" class="form-input" placeholder="e.g. manager@barca.com" required>
+              </div>
+              <div class="form-group-full">
+                <label for="formSubject" class="form-label">Subject</label>
+                <input type="text" id="formSubject" class="form-input" placeholder="e.g. Contract offer / Project Proposal" required>
+              </div>
+              <div class="form-group-full">
+                <label for="formMessage" class="form-label">Tactical Brief (Message)</label>
+                <textarea id="formMessage" class="form-input" placeholder="Outline your requirements or technical challenge..." required></textarea>
+              </div>
+              <div class="form-submit-btn-wrapper">
+                <button type="submit" class="btn-gold" id="formSubmitBtn" style="width: 100%; justify-content: center;">
+                  <i data-lucide="send"></i> Send Match Invitation
+                </button>
+              </div>
+            </form>
+            
+            <!-- Success Display Box -->
+            <div class="form-success-msg" id="formSuccessMsg">
+              <i data-lucide="check-circle" style="width: 32px; height: 32px; color: var(--gold-premium); margin: 0 auto 12px; display: block;"></i>
+              <h3>Tactical Brief Dispatched!</h3>
+              <p style="margin-top: 8px; font-size: 0.9rem; color: var(--text-silver);">
+                The final whistle has blown. Your invitation has been securely received. I'll analyze the details and get back to you shortly. Visca el Barça!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       9. FOOTER
+       ========================================== -->
+  <footer class="footer-bottom" id="page-footer">
+    <div class="container">
+      <div class="footer-logo">
+        [ ABBHI KUMAR SINGH ]<span style="color: var(--gold-premium);">.</span>
+      </div>
+      <p class="footer-copy" id="footer-copyright-note">
+        © 2026 Abbhi Kumar Singh. All rights reserved. Built with Blaugrana Premium Design.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       10. PROJECT DETAIL MODAL (MATCH REPLAY)
+       ========================================== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalProjTitle">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="closeProjModalBtn" aria-label="Close modal">&times;</button>
+      
+      <div class="project-live-indicator" style="margin-bottom: 16px;"><span class="pulse-dot"></span> MATCH STATISTICS</div>
+      <h3 id="modalProjTitle" style="font-size: 1.8rem; margin-bottom: 6px;">Project Title</h3>
+      <span class="project-tech-header" id="modalProjTech" style="margin-bottom: 20px; display: inline-block;">Tech Stack</span>
+      
+      <p class="modal-project-desc" id="modalProjDesc">Project Description Text goes here...</p>
+      
+      <div class="modal-project-highlights">
+        <h4>Key Plays & Highlights</h4>
+        <ul id="modalProjBullets">
+          <!-- Dynamic details -->
+        </ul>
+      </div>
+      
+      <div class="hero-ctas" style="margin-top: 30px; border-top: 1px solid rgba(226, 232, 240, 0.08); padding-top: 24px;">
+        <a href="" id="modalProjGithub" class="btn-secondary" target="_blank">
+          <i data-lucide="github"></i> View Repo
+        </a>
+        <a href="" id="modalProjLive" class="btn-gold" target="_blank">
+          <i data-lucide="external-link"></i> Live Stream (Demo)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       11. RESUME MODAL (SCOUT REPORT)
+       ========================================== -->
+  <div class="modal-overlay" id="resumeModal" role="dialog" aria-modal="true" aria-labelledby="modalResumeTitle">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="closeResumeModalBtn" aria-label="Close modal">&times;</button>
+      
+      <!-- Print Actions -->
+      <div class="resume-actions-top">
+        <button class="btn-gold" id="printResumeBtn"><i data-lucide="printer"></i> Print Report</button>
+        <button class="btn-secondary modal-close-btn-text" onclick="document.getElementById('resumeModal').classList.remove('active'); document.body.classList.remove('no-scroll');"><i data-lucide="x"></i> Close</button>
+      </div>
+
+      <!-- Printable Resume Body -->
+      <div class="resume-body" style="margin-top: 20px;">
+        <header class="resume-header">
+          <div class="resume-personal-info">
+            <h3 id="modalResumeTitle">Abbhi Kumar Singh</h3>
+            <p>Computer Science Engineer & AI/ML Android Developer</p>
+            <div class="resume-contacts">
+              <span>Bengaluru, India | +91-9632070071 | singhabbhi08@gmail.com</span>
+              <span>LinkedIn: linkedin.com/in/abbhi-kumar-singh | GitHub: github.com/abbhi-kumar-singh</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Education -->
+        <section class="resume-section">
+          <h4 class="resume-section-title">Education</h4>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span class="resume-item-title">Atria Institute of Technology (VTU)</span>
+              <span class="resume-item-meta">Graduated</span>
+            </div>
+            <p style="font-size: 0.95rem; font-weight: 600; margin-bottom: 4px;">Bachelor of Engineering (B.E.) in Computer Science & Engineering</p>
+            <p class="resume-item-desc">Cumulative Grade Point Average (CGPA): <strong>8.31 / 10.0</strong></p>
+          </div>
+        </section>
+
+        <!-- Experience & Simulations -->
+        <section class="resume-section">
+          <h4 class="resume-section-title">Professional Experience</h4>
+          
+          <!-- MindMatrix -->
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span class="resume-item-title">Android Application Developer | MindMatrix</span>
+              <span class="resume-item-meta">Nov 2025 - Present</span>
+            </div>
+            <ul class="timeline-bullets" style="font-size: 0.88rem; gap: 6px;">
+              <li>Developing and maintaining scalable, performance-focused Android applications using modern modular clean architectures.</li>
+              <li>Built "Jenu-Gumpu", an offline-first Android marketplace app using Jetpack Compose and Room DB for rural honey collectives. Integrated on-device TensorFlow Lite models for automated honey grading and ML Kit for QR-based traceability.</li>
+              <li>Collaborated in fast-paced Agile sprints covering the full app lifecycle from requirement analysis to QA deployment.</li>
+            </ul>
+          </div>
+          
+          <!-- Deloitte -->
+          <div class="resume-item" style="margin-top: 15px;">
+            <div class="resume-item-header">
+              <span class="resume-item-title">Data Analyst Simulation | Deloitte (via Forage)</span>
+              <span class="resume-item-meta">Job Simulation</span>
+            </div>
+            <ul class="timeline-bullets" style="font-size: 0.88rem; gap: 6px;">
+              <li>Completed an end-to-end analytics simulation covering raw data ingestion, data cleaning, and trend analysis.</li>
+              <li>Built interactive Tableau dashboards to track operational KPIs, perform Root Cause Analysis (RCA), and map process deviations.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Grid of skills and certs -->
+        <div class="resume-grid-split">
+          <!-- Skills column -->
+          <section class="resume-section">
+            <h4 class="resume-section-title">Technical Expertise</h4>
+            <div class="resume-skills-block">
+              <div class="resume-skills-group">
+                <h5>Languages</h5>
+                <div class="resume-skills-tags">
+                  <span class="resume-skill-badge">Python</span>
+                  <span class="resume-skill-badge">Java</span>
+                  <span class="resume-skill-badge">C</span>
+                  <span class="resume-skill-badge">SQL</span>
+                </div>
+              </div>
+              <div class="resume-skills-group">
+                <h5>AI & Machine Learning</h5>
+                <div class="resume-skills-tags">
+                  <span class="resume-skill-badge">Computer Vision (OpenCV)</span>
+                  <span class="resume-skill-badge">MediaPipe</span>
+                  <span class="resume-skill-badge">TensorFlow Lite</span>
+                  <span class="resume-skill-badge">Supervised Learning</span>
+                </div>
+              </div>
+              <div class="resume-skills-group">
+                <h5>Mobile & Web Dev</h5>
+                <div class="resume-skills-tags">
+                  <span class="resume-skill-badge">Android SDK</span>
+                  <span class="resume-skill-badge">Jetpack Compose</span>
+                  <span class="resume-skill-badge">Room DB</span>
+                  <span class="resume-skill-badge">React.js / Next.js</span>
+                </div>
+              </div>
+              <div class="resume-skills-group">
+                <h5>Data & Cloud</h5>
+                <div class="resume-skills-tags">
+                  <span class="resume-skill-badge">AWS Services</span>
+                  <span class="resume-skill-badge">Tableau / Power BI</span>
+                  <span class="resume-skill-badge">Pandas / NumPy</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Certifications & Leadership column -->
+          <section class="resume-section">
+            <h4 class="resume-section-title">Certifications & Accolades</h4>
+            <ul class="timeline-bullets" style="font-size: 0.88rem; gap: 8px;">
+              <li>AWS Solutions Architect Certification (Infosys Springboard)</li>
+              <li>Applied Generative AI Certification (Infosys Springboard)</li>
+              <li>Introduction to Data Science (Infosys Springboard)</li>
+              <li>Agile Scrum in Practice (Infosys Springboard)</li>
+              <li><strong>Hackathon Finalist:</strong> Top-7 finish in inter-college innovation challenge.</li>
+            </ul>
+            
+            <h4 class="resume-section-title" style="margin-top: 16px;">Athletic Leadership</h4>
+            <ul class="timeline-bullets" style="font-size: 0.88rem; gap: 8px;">
+              <li><strong>Captain (2025 Runners-Up):</strong> VTU Central Division Football Team. Guided the squad through tournament matches.</li>
+              <li><strong>Vice-Captain (2024 Champions):</strong> VTU Central Division Football Team. Led tactical setups and defensive line coordination.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lucide Vector Icons and Startup Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    // Initialize Lucide SVG Icons
+    lucide.createIcons();
+  </script>
+  
+  <!-- Firebase SDK Compatibility Libraries (v9) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
