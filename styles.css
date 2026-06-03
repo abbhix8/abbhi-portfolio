@@ -1260,7 +1260,7 @@ ul {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 30px;
 }
 
@@ -1924,6 +1924,15 @@ textarea.form-input {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --border-radius: 8px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .section-padding {
+    padding: 60px 0;
+  }
   .header-nav {
     padding: 15px 0;
   }
@@ -1957,6 +1966,189 @@ textarea.form-input {
   }
   .about-highlights-grid {
     grid-template-columns: 1fr;
+  }
+  .timeline::before {
+    left: 20px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 0;
+    text-align: left !important;
+    margin-bottom: 40px;
+  }
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+  .timeline-item:nth-child(odd) .timeline-badge,
+  .timeline-item:nth-child(even) .timeline-badge {
+    left: 8px;
+    right: auto;
+  }
+  .timeline-company {
+    justify-content: flex-start !important;
+  }
+  .slogan-text {
+    font-size: 1.1rem;
+    padding: 0 20px;
+    letter-spacing: 0.08em;
+  }
+  .slogan-text::before,
+  .slogan-text::after {
+    font-size: 0.9rem;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .certs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.05rem;
+  }
+  .logo span {
+    font-size: 1.4rem;
+  }
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  .hero-badge {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+    margin-bottom: 16px;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-title span.title-gradient-gold {
+    font-size: 1.7rem;
+  }
+  .hero-subheading {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+  .hero-ctas {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-ctas .btn-gold,
+  .hero-ctas .btn-outline-gold {
+    width: 100%;
+    justify-content: center;
+  }
+  .sports-card {
+    padding: 16px;
+  }
+  .pitch-graphic {
+    height: 160px;
+    margin-bottom: 16px;
+  }
+  .card-player-info h3 {
+    font-size: 1.25rem;
+  }
+  .card-stats-grid {
+    gap: 8px;
+    padding-top: 8px;
+  }
+  .card-stat-val {
+    font-size: 1.1rem;
+  }
+  .card-stat-lbl {
+    font-size: 0.55rem;
+  }
+  .slogan-banner {
+    padding: 15px 0;
+  }
+  .slogan-text {
+    font-size: 0.8rem;
+    padding: 0 10px;
+    letter-spacing: 0.05em;
+  }
+  .slogan-text::before,
+  .slogan-text::after {
+    display: none;
+  }
+  .leadership-visual-panel {
+    padding: 20px 16px;
+  }
+  .leadership-armband {
+    padding: 10px 14px;
+    margin-bottom: 16px;
+  }
+  .armband-text {
+    font-size: 1rem;
+  }
+  .leadership-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .about-intro-highlight {
+    font-size: 1.15rem;
+    padding-left: 14px;
+  }
+  .about-paragraph {
+    font-size: 0.95rem;
+  }
+  .about-highlight-item {
+    padding: 12px;
+  }
+  .skills-grid,
+  .projects-grid,
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+  .skill-card {
+    padding: 20px;
+  }
+  .project-card {
+    padding: 20px;
+  }
+  .cert-card {
+    padding: 16px;
+    gap: 12px;
+  }
+  .timeline-card {
+    padding: 20px 16px;
+  }
+  .timeline-role {
+    font-size: 1.15rem;
+  }
+  .contact-form-panel {
+    padding: 24px 16px;
+  }
+  .contact-slogan {
+    font-size: 1.4rem;
+  }
+  .modal-container {
+    padding: 24px 16px;
+    width: 95%;
+    max-height: 90vh;
+  }
+  .resume-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .resume-actions-top {
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .resume-actions-top button {
+    width: 100%;
+    justify-content: center;
+  }
+  .resume-personal-info h3 {
+    font-size: 1.5rem;
   }
 }
 
