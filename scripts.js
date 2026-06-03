@@ -316,13 +316,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // 1. Log message to Firestore database if configured
       if (isFirebaseConfigured && db) {
-        db.collection("contacts").add({
-          name: name,
-          email: email,
-          subject: subject,
-          message: message,
-          timestamp: firebase.firestore.FieldValue.serverTimestamp()
-        }).catch(err => console.error("Firestore write failed:", err));
+        try {
+          db.collection("contacts").add({
+            name: name,
+            email: email,
+            subject: subject,
+            message: message,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+          }).catch(err => console.error("Firestore write failed:", err));
+        } catch (dbError) {
+          console.error("Firestore write exception caught:", dbError);
+        }
       }
 
       // 2. Dispatch email to your inbox using FormSubmit (100% free & card-free)
