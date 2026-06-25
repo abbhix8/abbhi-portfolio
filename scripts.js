@@ -35,17 +35,17 @@ document.addEventListener('DOMContentLoaded', () => {
       github: "https://github.com/abbhix8/abbhi-portfolio",
       live: "https://abbhix8.github.io/abbhi-portfolio/"
     },
-    objectdetection: {
-      title: "Real-Time Object & Color Detection System",
-      tech: "Python, OpenCV, NumPy",
-      desc: "A high-frequency computer vision application that processes camera feeds to recognize specific objects and isolate target color values on the fly.",
+    jenugumpu: {
+      title: "Jenu-Gumpu — Offline-First Android App",
+      tech: "Android, Jetpack Compose, Room DB, TensorFlow Lite, ZXing/ML Kit",
+      desc: "An offline-first Android application designed for rural honey collectives to manage local inventory, automate quality grading, and enable batch traceability.",
       highlights: [
-        "Developed a robust image processing pipeline utilizing color space transformations (BGR to HSV) and morphological operators.",
-        "Implemented threshold masking and contour algorithms to trace bounding boxes around designated targets with real-time stability.",
-        "Programmed coordinate tracking to calculate centroid movement paths, enabling object tracing across frame sequences.",
-        "Created customizable sliders in the graphical control panel to adjust H, S, and V bounds on the fly, allowing easy setup for variable light conditions."
+        "Built an offline-first mobile app using Jetpack Compose and Room DB for reliable data storage in remote areas.",
+        "Integrated on-device TensorFlow Lite models for automated honey quality grading, and ZXing/ML Kit for QR-based batch traceability.",
+        "Managed the complete app lifecycle from initial requirement analysis to offline unit testing and structured QA deployment.",
+        "Collaborated in fast-paced Agile sprints at MindMatrix, aligning app features with rural collective operations."
       ],
-      github: "https://github.com/abbhi-kumar-singh",
+      github: "https://github.com/abbhix8",
       live: "#"
     }
   };
@@ -275,6 +275,16 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.classList.add('no-scroll');
     });
   });
+
+  // Open Degree Modal
+  const degreeButton = document.getElementById('about-badge-degree');
+  if (degreeButton && degreeModal) {
+    degreeButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      degreeModal.classList.add('active');
+      document.body.classList.add('no-scroll');
+    });
+  }
 
 
 
